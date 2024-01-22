@@ -277,6 +277,7 @@ jboss.test.debugging=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,ad
 #jboss.heap.debugging=-XX:+HeapDumpOnOutOfMemoryError
 
 jeetck.mods=/home/starksm/Dev/Jakarta/wildflytck/cts-10-mods
+# jeetck.mods=~/NOT_YET_AVAILABLE/cts-10-mods
 ###############################################################
 # @ts.display -- location to display CTS output on Unix
 ###############################################################

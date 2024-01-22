@@ -8,6 +8,7 @@ There are two repositories to clone and build:
 Build the WildFly Arquillian container:
 git clone https://github.com/starksm64/wildfly-arquillian.git
 cd wildfly-arquillian
+git checkout appclient
 mvn install
 
 Build the Jakarta EE TCK Arquillian/Junit5 tests:
