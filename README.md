@@ -31,59 +31,20 @@ The current status of the 3 test classes is:
 [INFO] 
 [INFO] --- maven-surefire-plugin:3.1.2:test (appclient-tests-tck) @ wildfly-tck-runner ---
 [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
-[INFO] 
+[INFO]
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.sun.ts.tests.ejb30.bb.session.stateless.basic.ClientTest
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60.56 s -- in com.sun.ts.tests.ejb30.bb.session.stateless.basic.ClientTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.32 s -- in com.sun.ts.tests.ejb30.bb.session.stateless.basic.ClientTest
 [INFO] Running com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest
-[ERROR] Tests run: 20, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 163.8 s <<< FAILURE! -- in com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.checkedRollbackAppExceptionTest -- Time elapsed: 8.320 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got expected application exception,expected tx status code 1(STATUS_MARKED_ROLLBACK), but actual 0(STATUS_ACTIVE)
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
-
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.uncheckedRollbackAppExceptionTest -- Time elapsed: 8.192 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got unexpected exception:
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
- 
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.uncheckedAppExceptionTest2 -- Time elapsed: 8.225 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got unexpected exception:
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
- 
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.uncheckedAppExceptionTestLocal -- Time elapsed: 8.231 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got unexpected exception:
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
-
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.uncheckedRollbackAppExceptionTestLocal -- Time elapsed: 8.211 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got unexpected exception:
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
-
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.uncheckedAppExceptionTest -- Time elapsed: 8.141 s <<< ERROR!
-java.lang.Exception: Test case throws exception: com.sun.ts.tests.ejb30.common.appexception.UncheckedAppException
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
-
-[ERROR] com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest.checkedRollbackAppExceptionTestLocal -- Time elapsed: 8.257 s <<< ERROR!
-java.lang.Exception: Test case throws exception: Got expected application exception,expected tx status code 1(STATUS_MARKED_ROLLBACK), but actual 0(STATUS_ACTIVE)
-        at org.jboss.as.arquillian.container.protocol.appclient.AppClientMethodExecutor.invoke(AppClientMethodExecutor.java:86)
- 
-
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 82.18 s -- in com.sun.ts.tests.ejb30.bb.session.stateless.annotation.appexception.annotated.ClientTest
 [INFO] Running com.sun.ts.tests.ejb30.bb.session.stateless.annotation.enventry.ClientTest
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 147.1 s -- in com.sun.ts.tests.ejb30.bb.session.stateless.annotation.enventry.ClientTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 147.8 s -- in com.sun.ts.tests.ejb30.bb.session.stateless.annotation.enventry.ClientTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   ClientTest.checkedRollbackAppExceptionTest »  Test case throws exception: Got expected application exception,expected tx status code 1(STATUS_MARKED_ROLLBACK), but actual 0(STATUS_ACTIVE)
-[ERROR]   ClientTest.checkedRollbackAppExceptionTestLocal »  Test case throws exception: Got expected application exception,expected tx status code 1(STATUS_MARKED_ROLLBACK), but actual 0(STATUS_ACTIVE)
-[ERROR]   ClientTest.uncheckedAppExceptionTest »  Test case throws exception: com.sun.ts.tests.ejb30.common.appexception.UncheckedAppException
-[ERROR]   ClientTest.uncheckedAppExceptionTest2 »  Test case throws exception: Got unexpected exception:
-[ERROR]   ClientTest.uncheckedAppExceptionTestLocal »  Test case throws exception: Got unexpected exception:
-[ERROR]   ClientTest.uncheckedRollbackAppExceptionTest »  Test case throws exception: Got unexpected exception:
-[ERROR]   ClientTest.uncheckedRollbackAppExceptionTestLocal »  Test case throws exception: Got unexpected exception:
-[INFO] 
-[ERROR] Tests run: 45, Failures: 0, Errors: 7, Skipped: 0
-[INFO] 
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
 ...
 ```
 
